@@ -1,8 +1,8 @@
 function Graph (props){
      return (<>
 
-        <svg width="500" height="300">
-            <rect width="400" height="100" 
+        <svg width="300" height="300">
+            <rect width="200" height="100" 
                 style={{
                     fill:'rgb(255,255,255)',
                     'stroke-width': 1,
@@ -12,7 +12,7 @@ function Graph (props){
             {props.calcList.map((each, index) => 
             <rect
                 key={index}
-                x={index * 20}
+                x={index * 20 + 10}
                 y={100 - each}
                 width="10"
                 height={each}

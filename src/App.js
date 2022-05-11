@@ -1,16 +1,19 @@
 import { useState } from 'react';
 import Graph from './component/graph'
 import NumberList from './component/numberList'
+import deagu from './data/deagu'
 import './App.css';
 
 function App() {
   const [startNumber, setStartNumber] = useState(1)
   const [endNumber, setEndNumber] = useState(100)
-  const [numCount, setNumCount] = useState(100000)
+  const [numCount, setNumCount] = useState(1000)
 
   const [numberList, setNumberList] = useState([])
   const [calcList, setCalcList] = useState([])
   const [filterList, setFilterList] = useState([])
+
+  const expectedValue = [30.1, 17.61, 12.5, 9.69, 7.92, 6.69, 5.8, 5.11, 4.58]
 
   function start(){
     if(endNumber < startNumber){
@@ -20,7 +23,8 @@ function App() {
     }
 
     const gap = endNumber - startNumber
-    const numlist = new Array(numCount).fill(0).map(() => Math.floor(Math.random() * gap) + startNumber)
+    //const numlist = new Array(numCount).fill(0).map(() => Math.floor(Math.random() * gap) + startNumber)
+    const numlist = deagu
     setNumberList(numlist)
     const cl = numlist.map(e => {
       let target = e
@@ -54,15 +58,9 @@ function App() {
       <button onClick={start}>시작</button>
       <div className='result-area'>
         <br/>
-        1개수 {filterList[0]} <br/>
-        2개수 {filterList[1]} <br/>
-        3개수 {filterList[2]} <br/>
-        4개수 {filterList[3]} <br/>
-        5개수 {filterList[4]} <br/>
-        6개수 {filterList[5]} <br/>
-        7개수 {filterList[6]} <br/>
-        8개수 {filterList[7]} <br/>
-        9개수 {filterList[8]} <br/>
+        {filterList.map((each, index) => <>
+          {index + 1}개수 {each.toFixed(2)} / 기댓값 : {expectedValue[index]}<br/>
+        </>)}
         <NumberList
           originalNumberList={numberList}
           calcList={calcList}
