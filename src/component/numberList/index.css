@@ -1,0 +1,9 @@
+.number-result-scope {
+    width: 80px;
+    height: 200px;
+    overflow: scroll;
+}
+
+.number-span{
+    width: 100%;
+}
