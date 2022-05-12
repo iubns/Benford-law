@@ -1,0 +1,9 @@
+.select-button-list{
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.select-button {
+    background-color: aqua;
+}

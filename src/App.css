@@ -4,8 +4,18 @@
 }
 
 .result-area {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   width: 100vw;
+  flex-wrap: wrap;
+}
+
+.percent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mumber-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
