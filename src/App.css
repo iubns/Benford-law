@@ -5,14 +5,12 @@
 
 .result-area {
   width: 100vw;
+  display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
-.percent{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .mumber-list{
   display: flex;

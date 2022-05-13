@@ -1,9 +1,18 @@
-.number-result-scope {
-    width: 300px;
+.number-list {
+    width: 400px;
     height: 200px;
     overflow: scroll;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 4px;
 }
 
 .number-span{
     width: 100%;
+}
+
+.hide-show{
+    background-color: #dddddd;
+    border-radius: 6px;
+    padding: 2px;
 }

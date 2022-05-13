@@ -1,9 +1,23 @@
+.root {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .select-button-list{
-    max-width: 500px;
+    min-width: 500px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .select-button {
-    background-color: aqua;
+    background-color: #B8F3B8;
+    color: #5A8452;
+    border-radius: 15px;
+    padding: 4px;
+    margin: 3px;
+    text-align: center;
 }
