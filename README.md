@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# 벤포드 법칙
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+벤포드의 법칙(Benford's law)은 실세계에서 존재하는 많은 수치 데이터의 10진법 값에서 수의 첫째 자리의 확률 분포를 관찰한 결과, 첫째 자리 숫자가 작을 확률이 크다는 법칙이다.
 
-## Available Scripts
+## 정말로 그런가?
 
-In the project directory, you can run:
+실제 데이터들로 확인해보자!
 
-### `npm start`
+### `첫번째 데이터 / 무작위 숫자`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+벤포드 법칙의 경우 실세계에 존재하는 수치 데이터만 적용이 된다.\
+나의 경우 해당 사실을 모르고 처음엔 무작위 숫자로 테스트를 하였었다.\
+과연 어떠한 결과가 나올까?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `두번째 데이터 / 코로나 확진자 수`
 
-### `npm test`
+최근 가장 만만한. 또한 아주 자연적으로 퍼지는 코로나 확진자수를 시뮬레이션 해보자!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+대구 데이터 : https://www.data.go.kr/data/15076362/fileData.do
+인천시 부평구 : https://www.data.go.kr/data/15085291/fileData.do
 
-### `npm run build`
+### `세번째 데이터 / 지방세 미환급`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+벤포드 법칙은 측정한 값 뿐만 아니라 우리가 일상 생활에서 사용하는 숫자들에게도 적용 된다.\
+그렇다면 금액도 과연 적용이 될까? 각 지자체가 환급해주지 않은 금액에 대해 시뮬레이션 해보자!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+성남시 데이터 : https://www.data.go.kr/data/15080593/fileData.do
+수원시 데이터 : https://www.data.go.kr/data/15080175/fileData.do
+세종시 데이터 : https://www.data.go.kr/data/15080356/fileData.do
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `네번째 데이터 / 미세먼지`
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+그렇다면 우리 세상에 존재하는 모든 숫자는 벤포드 법칙을 따르는가?\
+누가봐도 비슷 비슷한 수치라면? (예, 대한민국 평균 키 / 미세먼지 수치)\
+한번 확인해보자!
