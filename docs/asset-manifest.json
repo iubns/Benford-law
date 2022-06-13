@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Benford-law/static/css/main.3e6ce39e.css",
-    "main.js": "/Benford-law/static/js/main.141f7d8a.js",
+    "main.css": "/Benford-law/static/css/main.2628940e.css",
+    "main.js": "/Benford-law/static/js/main.2551ba88.js",
     "static/js/787.74ab3f52.chunk.js": "/Benford-law/static/js/787.74ab3f52.chunk.js",
     "index.html": "/Benford-law/index.html",
-    "main.3e6ce39e.css.map": "/Benford-law/static/css/main.3e6ce39e.css.map",
-    "main.141f7d8a.js.map": "/Benford-law/static/js/main.141f7d8a.js.map",
+    "main.2628940e.css.map": "/Benford-law/static/css/main.2628940e.css.map",
+    "main.2551ba88.js.map": "/Benford-law/static/js/main.2551ba88.js.map",
     "787.74ab3f52.chunk.js.map": "/Benford-law/static/js/787.74ab3f52.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e6ce39e.css",
-    "static/js/main.141f7d8a.js"
+    "static/css/main.2628940e.css",
+    "static/js/main.2551ba88.js"
   ]
 }

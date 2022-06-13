@@ -1,8 +1,9 @@
 import './index.css'
 
 function Graph (props){
-    const SVG_HEIGHT = 210;
-    const SVG_WIDTH = 600;
+    const SVG_HEIGHT = window.innerHeight / 3;
+    const SVG_WIDTH = window.innerWidth > 600 ? window.innerWidth / 2.3 : window.innerWidth - 50;
+    const MULTIPLE = (SVG_HEIGHT - 20) / 100; 
     const horizontalLine = new Array(5).fill(0).map((value, index) => (index + 1) * 25)
 
     function getXPositionFromIndex(x){
@@ -16,8 +17,8 @@ function Graph (props){
                     key={'line_' + value }
                     x1="27"
                     x2={SVG_WIDTH}
-                    y1={SVG_HEIGHT - value * 2}
-                    y2={SVG_HEIGHT - value * 2}
+                    y1={SVG_HEIGHT - value * MULTIPLE}
+                    y2={SVG_HEIGHT - value * MULTIPLE}
                     style={{
                         stroke:'rgb(30,30,30)',
                         strokeWidth: 0.2
@@ -41,9 +42,9 @@ function Graph (props){
                 <rect
                     key={'rect_' + index}
                     x={getXPositionFromIndex(index)}
-                    y={SVG_HEIGHT - each * 2}
+                    y={SVG_HEIGHT - each * MULTIPLE}
                     width={SVG_WIDTH / 15 }
-                    height={each * 2}
+                    height={each * MULTIPLE}
                     className="percent-bar"
                 />
             )}
@@ -54,7 +55,7 @@ function Graph (props){
                     x={getXPositionFromIndex(index) +
                         (Math.floor(each) + '').length + (SVG_WIDTH / 100)
                     }
-                    y={SVG_HEIGHT - 5 - each * 2}
+                    y={SVG_HEIGHT - 5 - each * MULTIPLE}
                     className='percent-text'
                 >
                     {Math.floor(each)}%
@@ -65,7 +66,7 @@ function Graph (props){
                 <text
                     key={'guide_text_' + index}
                     x="0"
-                    y={SVG_HEIGHT + 2 - value * 2}
+                    y={SVG_HEIGHT + 2 - value * MULTIPLE}
                     className="guide-text"
                 >
                     {value}%
