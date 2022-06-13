@@ -1,0 +1,20 @@
+
+.percent-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.guide-text {
+    font-size: 10px;
+}
+
+.percent-bar {
+    fill: #86c1ef;
+    stroke-width: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .percent-text {
+        font-size: 12px;
+    }
+}

@@ -111,7 +111,8 @@ function SelectData (props) {
                 {dataList.map((data, index) => 
                     <div 
                         className={
-                            selectedData === index ? 'selected-button' : 'select-button'
+                            `select-button 
+                            ${selectedData === index && 'selected-button'}`
                         }
                         onClick={() => setData(index)}
                         key={"s_" + index}
@@ -120,12 +121,13 @@ function SelectData (props) {
                     </div>
                 )}
             </div>
-            <div className='select-button-list'>
+            <div className='select-button-list' style={{marginTop: '30px'}}>
                 {
                     dataList[selectedData].menu.map((data, index) => 
                         <div 
                             className={
-                                selectMenu === index ? 'selected-button' : 'select-button'
+                                `select-button 
+                                ${selectMenu === index && 'selected-button'}`
                             } 
                             onClick={() => setMenu(index)}
                             key={"sk_" + index}

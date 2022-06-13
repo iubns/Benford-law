@@ -8,24 +8,21 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 10px;
-    border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 0.3rem;
+    background-color: #c9dcff;
+    padding: 4px;
 }
 
 .select-button {
-    background-color: #B8F3B8;
-    color: #5A8452;
-    border-radius: 15px;
-    padding: 4px;
+    background-color: #4256b2;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 6px;
     margin: 3px;
     text-align: center;
+    font-weight: bold;
 }
 
 .selected-button {
-    background-color: aqua;
-    color: #5A8452;
-    border-radius: 15px;
-    padding: 4px;
-    margin: 3px;
-    text-align: center;
+    background-color: #012660;
 }

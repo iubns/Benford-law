@@ -6,9 +6,13 @@ function PercentageByNumber(props) {
     return (
       <div className='percent-root'>
         <div className='percent'>
+          <div className='card-title'>백분율(기댓값)</div>
           {props.filterList.map((each, index) => 
-          <div key={'percent_' + index}>
-            {index + 1} = {each.toFixed(2)}%  ({expectedValue[index]}%)<br/>
+          <div 
+            className='number-row'
+            key={'percent_' + index}>
+            <b>{index + 1}</b> <span className='percent-number'> {each.toFixed(2)}%  ({expectedValue[index]}%)</span>
+            <br/>
           </div>)}
         </div>
       </div>

@@ -37,16 +37,23 @@ function App() {
     <div className="App">
       <SelectData setData={SetDataAndRender}/>
       <div className='result-area'>
-        <PercentageByNumber
-          filterList={filterList}
-        />
         <Graph
+          className='each-area'
           calcList={filterList}
         />
-        <NumberList
-          originalNumberList={dataList}
-          calcList={processedData}
+        <PercentageByNumber
+          className='each-area'
+          filterList={filterList}
         />
+        {
+          /* 과연 꼭 필요한가?...
+          <NumberList
+            className='each-area'
+            originalNumberList={dataList}
+            calcList={processedData}
+          />
+        */
+        }
       </div>
     </div>
   );
