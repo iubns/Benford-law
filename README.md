@@ -16,17 +16,17 @@
 
 최근 가장 만만한. 또한 아주 자연적으로 퍼지는 코로나 확진자수를 시뮬레이션 해보자!
 
-대구 데이터 : https://www.data.go.kr/data/15076362/fileData.do
-인천시 부평구 : https://www.data.go.kr/data/15085291/fileData.do
+대구 데이터 : https://www.data.go.kr/data/15076362/fileData.do\
+인천시 부평구 : https://www.data.go.kr/data/15085291/fileData.do\
 
 ### `세번째 데이터 / 지방세 미환급`
 
 벤포드 법칙은 측정한 값 뿐만 아니라 우리가 일상 생활에서 사용하는 숫자들에게도 적용 된다.\
 그렇다면 금액도 과연 적용이 될까? 각 지자체가 환급해주지 않은 금액에 대해 시뮬레이션 해보자!
 
-성남시 데이터 : https://www.data.go.kr/data/15080593/fileData.do
-수원시 데이터 : https://www.data.go.kr/data/15080175/fileData.do
-세종시 데이터 : https://www.data.go.kr/data/15080356/fileData.do
+성남시 데이터 : https://www.data.go.kr/data/15080593/fileData.do\
+수원시 데이터 : https://www.data.go.kr/data/15080175/fileData.do\
+세종시 데이터 : https://www.data.go.kr/data/15080356/fileData.do\
 
 ### `네번째 데이터 / 미세먼지`
 
